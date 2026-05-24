@@ -4,6 +4,8 @@
 let cartCount = 0;
 const cartCountEl = document.getElementById('cartCount');
 const toast = document.getElementById('toast');
+const stickyBuy = document.getElementById('stickyBuy');
+const stickyBuyBtn = document.getElementById('stickyBuyBtn');
 
 function showToast(msg) {
   toast.textContent = msg;
@@ -12,9 +14,9 @@ function showToast(msg) {
 }
 
 function addToCart(storage, price) {
-  cartCount++;
+  cartCount = 1;
   cartCountEl.textContent = cartCount;
-  showToast(`✓ iPhone 13 Pro Max seminovo ${storage} adicionado ao carrinho!`);
+  showToast(`✓ iPhone 13 Pro Max seminovo ${storage} reservado no carrinho!`);
 }
 
 // last item added — passed to checkout
@@ -42,6 +44,14 @@ document.getElementById('cartBtn').addEventListener('click', () => {
   if (window.openCheckout) window.openCheckout(lastStorage, lastPrice);
 });
 
+if (stickyBuyBtn) {
+  stickyBuyBtn.addEventListener('click', () => {
+    addToCart('128GB', 3000);
+    lastStorage = '128GB'; lastPrice = 3000;
+    if (window.openCheckout) window.openCheckout('128GB', 3000);
+  });
+}
+
 // ── Color Picker ──
 const swatches = document.querySelectorAll('.color-swatch');
 const colorLabel = document.getElementById('colorLabel');
@@ -61,6 +71,8 @@ swatches.forEach(sw => {
       heroPhone.src = sw.dataset.img;
       heroPhone.onload = () => { heroPhone.style.opacity = '1'; };
     }
+    const stickyImg = document.querySelector('.sticky-buy__product img');
+    if (stickyImg && sw.dataset.img) stickyImg.src = sw.dataset.img;
   });
 });
 
@@ -220,4 +232,9 @@ document.addEventListener('keydown', e => {
 const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
   header.style.boxShadow = window.scrollY > 10 ? '0 2px 20px rgba(0,0,0,.1)' : 'none';
+  if (stickyBuy) {
+    const pricing = document.getElementById('pricing');
+    const pricingTop = pricing ? pricing.getBoundingClientRect().top : 0;
+    stickyBuy.classList.toggle('sticky-buy--visible', window.scrollY > 520 && pricingTop > 120);
+  }
 }, { passive: true });

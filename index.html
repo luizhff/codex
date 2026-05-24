@@ -58,6 +58,11 @@
         <p class="hero__sub">128 GB · Todo original · ProMotion 120Hz</p>
         <p class="hero__price">R$ 3.000<span class="hero__price-cents">,00</span></p>
         <p class="hero__installment"><strong>Valor à vista</strong> no PIX ou dinheiro</p>
+        <div class="hero__trust">
+          <span>Original Apple</span>
+          <span>Desbloqueado</span>
+          <span>Checkout seguro</span>
+        </div>
         <div class="hero__actions">
           <button class="btn btn--primary" id="buyHeroBtn">Comprar agora</button>
           <a href="#specs" class="btn btn--ghost">Ver especificações</a>
@@ -74,6 +79,33 @@
     </div>
     <div class="hero__wave">
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f5f5f7"/></svg>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip" aria-label="Beneficios da compra">
+    <div class="container trust-strip__grid">
+      <div class="trust-item">
+        <span class="trust-item__icon">✓</span>
+        <div>
+          <strong>Testado antes do envio</strong>
+          <p>Funcionamento, desbloqueio e originalidade conferidos.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-item__icon">↩</span>
+        <div>
+          <strong>7 dias para conferir</strong>
+          <p>Compra online com prazo de arrependimento quando aplicável.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-item__icon">🔒</span>
+        <div>
+          <strong>Pagamento protegido</strong>
+          <p>Opções por Mercado Pago, PagBank, PayPal ou PIX.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -193,6 +225,10 @@
       <div class="pricing__grid">
         <div class="pricing-card pricing-card--highlight">
           <div class="pricing-card__badge">Seminovo original</div>
+          <div class="pricing-card__stock">
+            <span class="pricing-card__stock-dot"></span>
+            Última unidade disponível
+          </div>
           <h3>128 GB</h3>
           <p class="pricing-card__price">R$ 3.000</p>
           <p class="pricing-card__installment">Valor à vista no PIX ou dinheiro</p>
@@ -202,6 +238,16 @@
             <li>✓ Desbloqueado para operadoras</li>
             <li>✓ Testado e funcionando</li>
           </ul>
+          <div class="purchase-checklist">
+            <div>
+              <strong>Antes de pagar</strong>
+              <span>Confirme cor, estado do aparelho e forma de entrega no checkout.</span>
+            </div>
+            <div>
+              <strong>Entrega estimada</strong>
+              <span>CEP calculado na próxima etapa com preenchimento automático.</span>
+            </div>
+          </div>
           <button class="btn btn--primary" data-storage="128GB" data-price="3000">Adicionar ao carrinho</button>
         </div>
       </div>
@@ -415,6 +461,18 @@
 
   <!-- CART TOAST -->
   <div class="toast" id="toast"></div>
+
+  <!-- STICKY PURCHASE BAR -->
+  <aside class="sticky-buy" id="stickyBuy" aria-label="Resumo de compra">
+    <div class="sticky-buy__product">
+      <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=80&hei=96&fmt=png-alpha&.v=1645552346280" alt="iPhone 13 Pro Max" />
+      <div>
+        <strong>iPhone 13 Pro Max 128GB</strong>
+        <span>Seminovo original · R$ 3.000,00</span>
+      </div>
+    </div>
+    <button class="btn btn--primary sticky-buy__btn" id="stickyBuyBtn">Comprar</button>
+  </aside>
 
   <!-- GALLERY LIGHTBOX -->
   <div class="lightbox" id="galleryLightbox" aria-hidden="true">
