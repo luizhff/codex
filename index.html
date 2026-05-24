@@ -16,6 +16,7 @@
       <div class="nav__logo">&#63743; iStore</div>
       <ul class="nav__links">
         <li><a href="#specs">Especificações</a></li>
+        <li><a href="#condition">Estado</a></li>
         <li><a href="#gallery">Galeria</a></li>
         <li><a href="#demo">Vídeo</a></li>
         <li><a href="#pricing">Preço</a></li>
@@ -41,6 +42,7 @@
       <button class="mobile-menu__close" id="mobileMenuClose">✕</button>
       <ul class="mobile-menu__links">
         <li><a href="#specs"    class="mobile-menu__link">📱 Especificações</a></li>
+        <li><a href="#condition" class="mobile-menu__link">✅ Estado</a></li>
         <li><a href="#gallery"  class="mobile-menu__link">🖼️ Galeria</a></li>
         <li><a href="#demo"     class="mobile-menu__link">▶ Vídeo</a></li>
         <li><a href="#pricing"  class="mobile-menu__link">💰 Preço</a></li>
@@ -175,6 +177,88 @@
     </div>
   </section>
 
+  <!-- CONDITION -->
+  <section class="condition" id="condition">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-heading__eyebrow">Aparelho seminovo</p>
+        <h2 class="section-title">Estado do aparelho</h2>
+      </div>
+      <div class="condition__grid">
+        <div class="condition-panel">
+          <div class="condition-panel__score">
+            <span>9,2</span>
+            <strong>/10</strong>
+          </div>
+          <h3>Conservação geral excelente</h3>
+          <p>Unidade anunciada como seminova, original Apple, desbloqueada e testada antes da entrega.</p>
+        </div>
+        <div class="condition-checks">
+          <div class="condition-check">
+            <span>✓</span>
+            <div>
+              <strong>Tela sem trincos</strong>
+              <p>Display Super Retina XDR conferido para toque, brilho e resposta.</p>
+            </div>
+          </div>
+          <div class="condition-check">
+            <span>✓</span>
+            <div>
+              <strong>Face ID funcionando</strong>
+              <p>Reconhecimento facial e desbloqueio testados.</p>
+            </div>
+          </div>
+          <div class="condition-check">
+            <span>✓</span>
+            <div>
+              <strong>Câmeras testadas</strong>
+              <p>Lentes traseiras, frontal, foco e gravação de vídeo verificados.</p>
+            </div>
+          </div>
+          <div class="condition-check">
+            <span>✓</span>
+            <div>
+              <strong>Desbloqueado para operadoras</strong>
+              <p>Compatível com chip de qualquer operadora nacional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCLUDED -->
+  <section class="included" id="included">
+    <div class="container included__grid">
+      <div>
+        <p class="section-heading__eyebrow">Na compra</p>
+        <h2 class="section-title section-title--left">O que acompanha</h2>
+      </div>
+      <div class="included__items">
+        <div class="included-item">
+          <span>📱</span>
+          <strong>iPhone 13 Pro Max</strong>
+          <p>128GB, seminovo, original Apple e desbloqueado.</p>
+        </div>
+        <div class="included-item">
+          <span>🔌</span>
+          <strong>Cabo compatível</strong>
+          <p>Item essencial para carregamento e transferência.</p>
+        </div>
+        <div class="included-item">
+          <span>🧾</span>
+          <strong>Comprovante da venda</strong>
+          <p>Registro do pedido com dados do produto e atendimento.</p>
+        </div>
+        <div class="included-item included-item--muted">
+          <span>💬</span>
+          <strong>Confirme acessórios</strong>
+          <p>Caixa, capinha ou película podem ser confirmados pelo WhatsApp antes do pagamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- GALLERY -->
   <section class="gallery" id="gallery">
     <div class="container">
@@ -284,7 +368,10 @@
               <span>CEP calculado na próxima etapa com preenchimento automático.</span>
             </div>
           </div>
-          <button class="btn btn--primary" data-storage="128GB" data-price="3000">Adicionar ao carrinho</button>
+          <div class="pricing-card__actions">
+            <button class="btn btn--primary" data-storage="128GB" data-price="3000">Adicionar ao carrinho</button>
+            <a class="btn btn--whatsapp" id="pricingWhatsApp" href="#" target="_blank" rel="noopener">Tirar dúvidas no WhatsApp</a>
+          </div>
         </div>
       </div>
     </div>
@@ -508,6 +595,7 @@
       </div>
     </div>
     <button class="btn btn--primary sticky-buy__btn" id="stickyBuyBtn">Comprar</button>
+    <a class="sticky-buy__whatsapp" id="stickyWhatsApp" href="#" target="_blank" rel="noopener" aria-label="Tirar dúvidas no WhatsApp">WhatsApp</a>
   </aside>
 
   <!-- GALLERY LIGHTBOX -->

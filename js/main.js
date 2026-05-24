@@ -6,6 +6,10 @@ const cartCountEl = document.getElementById('cartCount');
 const toast = document.getElementById('toast');
 const stickyBuy = document.getElementById('stickyBuy');
 const stickyBuyBtn = document.getElementById('stickyBuyBtn');
+const WHATSAPP_NUMBER = '5599999999999';
+const whatsappMessage = encodeURIComponent(
+  'Olá! Tenho interesse no iPhone 13 Pro Max 128GB seminovo de R$ 3.000,00. Pode me enviar mais detalhes?'
+);
 
 function showToast(msg) {
   toast.textContent = msg;
@@ -57,6 +61,10 @@ if (stickyBuyBtn) {
     if (window.openCheckout) window.openCheckout('128GB', 3000);
   });
 }
+
+document.querySelectorAll('#pricingWhatsApp, #stickyWhatsApp').forEach(link => {
+  link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
+});
 
 // ── Color Picker ──
 const swatches = document.querySelectorAll('.color-swatch');
@@ -148,7 +156,7 @@ themeToggle.addEventListener('click', () => {
 
 // Scroll reveal
 const revealTargets = document.querySelectorAll(
-  '.colors, .spec-card, .gallery-card, .demo-video__copy, .demo-video__frame, .pricing-card, .faq-item, .reviews__summary, .review-card'
+  '.colors, .spec-card, .condition-panel, .condition-check, .included-item, .gallery-card, .demo-video__copy, .demo-video__frame, .pricing-card, .faq-item, .reviews__summary, .review-card'
 );
 
 if ('IntersectionObserver' in window) {
