@@ -29,6 +29,12 @@ document.getElementById('buyHeroBtn').addEventListener('click', () => {
   if (window.openCheckout) window.openCheckout('128GB', 3000);
 });
 
+document.getElementById('demoBuyBtn')?.addEventListener('click', () => {
+  addToCart('128GB', 3000);
+  lastStorage = '128GB'; lastPrice = 3000;
+  if (window.openCheckout) window.openCheckout('128GB', 3000);
+});
+
 document.querySelectorAll('[data-storage]').forEach(btn => {
   btn.addEventListener('click', () => {
     const s = btn.dataset.storage;
@@ -142,7 +148,7 @@ themeToggle.addEventListener('click', () => {
 
 // Scroll reveal
 const revealTargets = document.querySelectorAll(
-  '.colors, .spec-card, .gallery-card, .pricing-card, .faq-item, .reviews__summary, .review-card'
+  '.colors, .spec-card, .gallery-card, .demo-video__copy, .demo-video__frame, .pricing-card, .faq-item, .reviews__summary, .review-card'
 );
 
 if ('IntersectionObserver' in window) {
