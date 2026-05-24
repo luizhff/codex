@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone 13 Pro Max 128GB Seminovo — Todo Original</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__logo">&#63743; iStore</div>
+      <ul class="nav__links">
+        <li><a href="#specs">Especificações</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#pricing">Preço</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#reviews">Avaliações</a></li>
+      </ul>
+      <button class="btn btn--outline nav__cart" id="cartBtn">
+        🛒 <span id="cartCount">0</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo escuro" title="Alternar tema">
+        <span class="theme-toggle__icon" id="themeToggleIcon">☾</span>
+      </button>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__overlay" id="mobileMenuOverlay"></div>
+    <nav class="mobile-menu__panel">
+      <button class="mobile-menu__close" id="mobileMenuClose">✕</button>
+      <ul class="mobile-menu__links">
+        <li><a href="#specs"    class="mobile-menu__link">📱 Especificações</a></li>
+        <li><a href="#gallery"  class="mobile-menu__link">🖼️ Galeria</a></li>
+        <li><a href="#pricing"  class="mobile-menu__link">💰 Preço</a></li>
+        <li><a href="#faq"      class="mobile-menu__link">❓ FAQ</a></li>
+        <li><a href="#reviews"  class="mobile-menu__link">⭐ Avaliações</a></li>
+      </ul>
+      <button class="btn btn--primary mobile-menu__cta" id="mobileMenuBuy">Comprar agora</button>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content container">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Seminovo em estoque</p>
+        <h1 class="hero__title">iPhone 13<br><span>Pro Max</span></h1>
+        <p class="hero__sub">128 GB · Todo original · ProMotion 120Hz</p>
+        <p class="hero__price">R$ 3.000<span class="hero__price-cents">,00</span></p>
+        <p class="hero__installment"><strong>Valor à vista</strong> no PIX ou dinheiro</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" id="buyHeroBtn">Comprar agora</button>
+          <a href="#specs" class="btn btn--ghost">Ver especificações</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img
+          id="heroPhone"
+          class="hero__phone-img"
+          src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346280"
+          alt="iPhone 13 Pro Max Sierra Blue"
+        />
+      </div>
+    </div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f5f5f7"/></svg>
+    </div>
+  </section>
+
+  <!-- CORES -->
+  <section class="colors" id="colors">
+    <div class="container">
+      <h2 class="section-title">Escolha sua cor</h2>
+      <div class="color-picker">
+        <button class="color-swatch color-swatch--active" data-color="Sierra Blue"
+          data-img="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346280"
+          style="background:#a8c5da;" title="Sierra Blue"></button>
+        <button class="color-swatch" data-color="Graphite"
+          data-img="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346280"
+          style="background:#54524f;" title="Graphite"></button>
+        <button class="color-swatch" data-color="Gold"
+          data-img="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-gold-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346280"
+          style="background:#f5e6c8;" title="Gold"></button>
+        <button class="color-swatch" data-color="Silver"
+          data-img="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-silver-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346280"
+          style="background:#e8e8e8;" title="Silver"></button>
+        <button class="color-swatch" data-color="Alpine Green"
+          data-img="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-alpine-green-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346280"
+          style="background:#576856;" title="Alpine Green"></button>
+      </div>
+      <p class="color-label" id="colorLabel">Sierra Blue</p>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="specs" id="specs">
+    <div class="container">
+      <h2 class="section-title">Especificações</h2>
+      <div class="specs__grid">
+        <div class="spec-card">
+          <span class="spec-card__icon">📱</span>
+          <h3>Tela</h3>
+          <p>Super Retina XDR 6,7"<br>ProMotion 120Hz<br>2778 × 1284 px</p>
+        </div>
+        <div class="spec-card">
+          <span class="spec-card__icon">⚡</span>
+          <h3>Chip</h3>
+          <p>Apple A15 Bionic<br>6-core CPU<br>5-core GPU</p>
+        </div>
+        <div class="spec-card">
+          <span class="spec-card__icon">📷</span>
+          <h3>Câmera</h3>
+          <p>Sistema Pro 12MP<br>Teleobjetiva 3× ótico<br>Vídeo ProRes 4K</p>
+        </div>
+        <div class="spec-card">
+          <span class="spec-card__icon">🔋</span>
+          <h3>Bateria</h3>
+          <p>Até 28h de vídeo<br>Carregamento MagSafe<br>Carregamento sem fio</p>
+        </div>
+        <div class="spec-card">
+          <span class="spec-card__icon">💾</span>
+          <h3>Armazenamento</h3>
+          <p>128 GB<br>Aparelho seminovo<br>Unidade única disponível</p>
+        </div>
+        <div class="spec-card">
+          <span class="spec-card__icon">🛡️</span>
+          <h3>Resistência</h3>
+          <p>IP68 certificado<br>6m por 30 min<br>Vidro Ceramic Shield</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Galeria</h2>
+      <div class="gallery__grid">
+        <div class="gallery-card gallery-card--large">
+          <img class="gallery-card__bg"
+            src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=800&hei=950&fmt=jpeg&.v=1645552346280"
+            alt="iPhone 13 Pro Max Graphite" />
+          <div class="gallery-card__overlay">
+            <p class="gallery-card__label">Design Pro</p>
+            <p class="gallery-card__desc">Estrutura de aço inoxidável cirúrgico e vidro fosco na traseira</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img class="gallery-card__bg"
+            src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=600&hei=700&fmt=jpeg&.v=1645552346280"
+            alt="iPhone 13 Pro Max Sierra Blue" />
+          <div class="gallery-card__overlay">
+            <p class="gallery-card__label">ProMotion 120Hz</p>
+            <p class="gallery-card__desc">Taxa de atualização adaptativa até 120 Hz</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img class="gallery-card__bg"
+            src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-silver-select?wid=600&hei=700&fmt=jpeg&.v=1645552346280"
+            alt="iPhone 13 Pro Max Silver" />
+          <div class="gallery-card__overlay">
+            <p class="gallery-card__label">Câmera Pro 12MP</p>
+            <p class="gallery-card__desc">Qualidade cinematográfica direto do seu bolso</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img class="gallery-card__bg"
+            src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-gold-select?wid=600&hei=700&fmt=jpeg&.v=1645552346280"
+            alt="iPhone 13 Pro Max Gold" />
+          <div class="gallery-card__overlay">
+            <p class="gallery-card__label">A15 Bionic</p>
+            <p class="gallery-card__desc">O chip mais rápido da história do iPhone</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Oferta disponível</h2>
+      <div class="pricing__grid">
+        <div class="pricing-card pricing-card--highlight">
+          <div class="pricing-card__badge">Seminovo original</div>
+          <h3>128 GB</h3>
+          <p class="pricing-card__price">R$ 3.000</p>
+          <p class="pricing-card__installment">Valor à vista no PIX ou dinheiro</p>
+          <ul class="pricing-card__features">
+            <li>✓ Produto seminovo</li>
+            <li>✓ 100% original Apple</li>
+            <li>✓ Desbloqueado para operadoras</li>
+            <li>✓ Testado e funcionando</li>
+          </ul>
+          <button class="btn btn--primary" data-storage="128GB" data-price="3000">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Perguntas Frequentes</h2>
+      <div class="faq__list">
+        <div class="faq-item">
+          <button class="faq-item__question">O produto é original Apple?<span>+</span></button>
+          <div class="faq-item__answer">Sim. O aparelho é seminovo, 100% original Apple, desbloqueado e testado antes da venda.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">Qual o prazo de entrega?<span>+</span></button>
+          <div class="faq-item__answer">O prazo varia de 1 a 7 dias úteis dependendo da sua localidade. Capitais e regiões metropolitanas costumam receber em até 2 dias úteis.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">Quais formas de pagamento são aceitas?<span>+</span></button>
+          <div class="faq-item__answer">O valor anunciado é à vista: R$ 3.000,00 no PIX ou dinheiro. Parcelamento pode ser consultado antes da compra.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">Posso devolver o produto?<span>+</span></button>
+          <div class="faq-item__answer">Sim, você tem 7 dias corridos a partir do recebimento para devolver o produto sem custo, conforme o Código de Defesa do Consumidor.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">O iPhone é desbloqueado?<span>+</span></button>
+          <div class="faq-item__answer">Sim, todos os modelos são desbloqueados de fábrica e funcionam com qualquer operadora nacional e internacional.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="section-title">O que nossos clientes dizem</h2>
+
+      <!-- Resumo geral -->
+      <div class="reviews__summary">
+        <div class="reviews__score">
+          <span class="reviews__score-number">4.8</span>
+          <div class="reviews__stars reviews__stars--lg">
+            <span class="star star--full">★</span>
+            <span class="star star--full">★</span>
+            <span class="star star--full">★</span>
+            <span class="star star--full">★</span>
+            <span class="star star--half">★</span>
+          </div>
+          <span class="reviews__score-total">Baseado em 1.247 avaliações</span>
+        </div>
+        <div class="reviews__bars">
+          <div class="reviews__bar-row">
+            <span class="reviews__bar-label">5 ★</span>
+            <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:78%"></div></div>
+            <span class="reviews__bar-pct">78%</span>
+          </div>
+          <div class="reviews__bar-row">
+            <span class="reviews__bar-label">4 ★</span>
+            <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:14%"></div></div>
+            <span class="reviews__bar-pct">14%</span>
+          </div>
+          <div class="reviews__bar-row">
+            <span class="reviews__bar-label">3 ★</span>
+            <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:5%"></div></div>
+            <span class="reviews__bar-pct">5%</span>
+          </div>
+          <div class="reviews__bar-row">
+            <span class="reviews__bar-label">2 ★</span>
+            <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:2%"></div></div>
+            <span class="reviews__bar-pct">2%</span>
+          </div>
+          <div class="reviews__bar-row">
+            <span class="reviews__bar-label">1 ★</span>
+            <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:1%"></div></div>
+            <span class="reviews__bar-pct">1%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards de avaliações -->
+      <div class="reviews__grid">
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">MC</div>
+            <div class="review-card__meta">
+              <p class="review-card__name">Marcos Carvalho</p>
+              <p class="review-card__date">12 de maio de 2025</p>
+            </div>
+            <div class="review-card__badge">Compra verificada ✓</div>
+          </div>
+          <div class="reviews__stars review-card__stars">
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span>
+          </div>
+          <p class="review-card__title">Melhor smartphone que já tive!</p>
+          <p class="review-card__text">Produto chegou muito bem conservado e todo original. A câmera é simplesmente incrível — fotos nítidas mesmo à noite. Bateria segura bem o dia com uso moderado. Entrega em 2 dias úteis aqui em SP. Nota 1000!</p>
+          <div class="review-card__product">iPhone 13 Pro Max · 128GB · Sierra Blue</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar" style="background:#34c759;">FS</div>
+            <div class="review-card__meta">
+              <p class="review-card__name">Fernanda Santos</p>
+              <p class="review-card__date">28 de abril de 2025</p>
+            </div>
+            <div class="review-card__badge">Compra verificada ✓</div>
+          </div>
+          <div class="reviews__stars review-card__stars">
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span>
+          </div>
+          <p class="review-card__title">Atendimento perfeito e entrega rápida</p>
+          <p class="review-card__text">Fiz o pedido numa sexta e recebi na segunda-feira! O iPhone veio conforme anunciado, original e muito bem cuidado. Paguei à vista no PIX e o atendimento foi transparente do começo ao fim. Super recomendo a iStore!</p>
+          <div class="review-card__product">iPhone 13 Pro Max · 128GB · Gold</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar" style="background:#ff9500;">RL</div>
+            <div class="review-card__meta">
+              <p class="review-card__name">Rafael Lima</p>
+              <p class="review-card__date">3 de maio de 2025</p>
+            </div>
+            <div class="review-card__badge">Compra verificada ✓</div>
+          </div>
+          <div class="reviews__stars review-card__stars">
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--empty">★</span>
+          </div>
+          <p class="review-card__title">Excelente, mas caixa levemente amassada</p>
+          <p class="review-card__text">O aparelho chegou em perfeito estado de funcionamento. Só a caixa externa teve um leve amassado no canto — sem danos ao produto. Câmera ProRes é surreal para gravar vídeos. Tirando o detalhe da embalagem, tudo 10!</p>
+          <div class="review-card__product">iPhone 13 Pro Max · 256GB · Graphite</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar" style="background:#af52de;">JP</div>
+            <div class="review-card__meta">
+              <p class="review-card__name">Juliana Pereira</p>
+              <p class="review-card__date">19 de maio de 2025</p>
+            </div>
+            <div class="review-card__badge">Compra verificada ✓</div>
+          </div>
+          <div class="reviews__stars review-card__stars">
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span>
+          </div>
+          <p class="review-card__title">Presente perfeito para o meu marido</p>
+          <p class="review-card__text">Comprei de surpresa e ele amou! O suporte da iStore me ajudou a escolher a cor certa pelo chat. O iPhone veio em uma caixa de presente lindíssima. A tela ProMotion 120Hz é outra dimensão comparada ao aparelho antigo dele.</p>
+          <div class="review-card__product">iPhone 13 Pro Max · 512GB · Alpine Green</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar" style="background:#ff3b30;">BN</div>
+            <div class="review-card__meta">
+              <p class="review-card__name">Bruno Nascimento</p>
+              <p class="review-card__date">7 de maio de 2025</p>
+            </div>
+            <div class="review-card__badge">Compra verificada ✓</div>
+          </div>
+          <div class="reviews__stars review-card__stars">
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span>
+          </div>
+          <p class="review-card__title">Já é o meu 3º iPhone comprado aqui</p>
+          <p class="review-card__text">Cliente fiel da iStore há 4 anos. Sempre entregam o que prometem: produto original, nota fiscal, frete rápido. O 13 Pro Max é monstro — chip A15 voa em qualquer app ou jogo. Não pretendo mudar de loja tão cedo!</p>
+          <div class="review-card__product">iPhone 13 Pro Max · 128GB · Silver</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar" style="background:#5856d6;">CA</div>
+            <div class="review-card__meta">
+              <p class="review-card__name">Carolina Alves</p>
+              <p class="review-card__date">22 de abril de 2025</p>
+            </div>
+            <div class="review-card__badge">Compra verificada ✓</div>
+          </div>
+          <div class="reviews__stars review-card__stars">
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--full">★</span><span class="star star--full">★</span>
+            <span class="star star--half">★</span>
+          </div>
+          <p class="review-card__title">Ótima compra, preço justo</p>
+          <p class="review-card__text">Pesquisei bastante antes de comprar e a iStore tinha um preço muito justo para um seminovo original. O aparelho é incrível — câmera, tela, autonomia, tudo de alto nível. A resistência à água IP68 me deu mais tranquilidade no dia a dia.</p>
+          <div class="review-card__product">iPhone 13 Pro Max · 128GB · Sierra Blue</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&#63743; iStore &mdash; Todos os direitos reservados &copy; 2024</p>
+      <p class="footer__sub">iPhone é marca registrada da Apple Inc. Este site é um projeto demonstrativo.</p>
+    </div>
+  </footer>
+
+  <!-- CART TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- GALLERY LIGHTBOX -->
+  <div class="lightbox" id="galleryLightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Fechar imagem">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Imagem anterior">‹</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Proxima imagem">›</button>
+  </div>
+
+  <!-- CHATBOT -->
+  <div class="chatbot-bubble" id="chatbotBubble" title="Fale com nosso assistente">
+    💬
+    <span class="chatbot-bubble__dot"></span>
+  </div>
+
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-header__info">
+        <div class="chatbot-avatar">🤖</div>
+        <div>
+          <p class="chatbot-header__name">Assistente iStore</p>
+          <p class="chatbot-header__status">Online agora</p>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatbotClose">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chatbot-msg chatbot-msg--bot">
+        Olá! 👋 Sou o assistente virtual da iStore. Como posso te ajudar com o <strong>iPhone 13 Pro Max</strong>?
+      </div>
+      <div class="chatbot-suggestions">
+        <button class="suggestion-btn">💰 Preço e parcelas</button>
+        <button class="suggestion-btn">📦 Prazo de entrega</button>
+        <button class="suggestion-btn">📷 Câmera</button>
+        <button class="suggestion-btn">🔋 Bateria</button>
+      </div>
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Digite sua dúvida..." />
+      <button class="chatbot-send" id="chatbotSend">➤</button>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="checkout-overlay" id="checkoutOverlay">
+    <div class="checkout-modal" id="checkoutModal">
+
+      <!-- Header -->
+      <div class="checkout-modal__header">
+        <h2 class="checkout-modal__title">Finalizar Compra</h2>
+        <button class="checkout-modal__close" id="checkoutClose">✕</button>
+      </div>
+
+      <!-- Steps indicator -->
+      <div class="checkout-steps" id="checkoutSteps">
+        <div class="checkout-step checkout-step--active" data-step="1">
+          <div class="checkout-step__circle">1</div>
+          <span>Dados</span>
+        </div>
+        <div class="checkout-step__line"></div>
+        <div class="checkout-step" data-step="2">
+          <div class="checkout-step__circle">2</div>
+          <span>Endereço</span>
+        </div>
+        <div class="checkout-step__line"></div>
+        <div class="checkout-step" data-step="3">
+          <div class="checkout-step__circle">3</div>
+          <span>Pagamento</span>
+        </div>
+      </div>
+
+      <!-- Order summary -->
+      <div class="checkout-summary" id="checkoutSummary">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=120&hei=142&fmt=png-alpha&.v=1645552346280" alt="iPhone" class="checkout-summary__img" />
+        <div class="checkout-summary__info">
+          <p class="checkout-summary__name">iPhone 13 Pro Max</p>
+          <p class="checkout-summary__storage" id="summaryStorage">128GB · Sierra Blue · Seminovo</p>
+        </div>
+        <p class="checkout-summary__price" id="summaryPrice">R$ 3.000,00</p>
+      </div>
+
+      <!-- STEP 1: Dados pessoais -->
+      <div class="checkout-pane" id="pane1">
+        <div class="checkout-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nome completo *</label>
+              <input type="text" id="fieldName" placeholder="João da Silva" autocomplete="name" />
+              <span class="form-error" id="errName"></span>
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="form-group">
+              <label>E-mail *</label>
+              <input type="email" id="fieldEmail" placeholder="joao@email.com" autocomplete="email" />
+              <span class="form-error" id="errEmail"></span>
+            </div>
+            <div class="form-group">
+              <label>Telefone / WhatsApp *</label>
+              <input type="tel" id="fieldPhone" placeholder="(11) 99999-9999" autocomplete="tel" maxlength="15" />
+              <span class="form-error" id="errPhone"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>CPF *</label>
+              <input type="text" id="fieldCpf" placeholder="000.000.000-00" maxlength="14" />
+              <span class="form-error" id="errCpf"></span>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-actions">
+          <span></span>
+          <button class="btn btn--primary" id="step1Next">Continuar →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: Endereço -->
+      <div class="checkout-pane checkout-pane--hidden" id="pane2">
+        <div class="checkout-form">
+          <div class="form-row form-row--cep">
+            <div class="form-group">
+              <label>CEP *</label>
+              <div class="cep-wrapper">
+                <input type="text" id="fieldCep" placeholder="00000-000" maxlength="9" />
+                <span class="cep-loader" id="cepLoader"></span>
+              </div>
+              <span class="form-error" id="errCep"></span>
+            </div>
+            <div class="form-group">
+              <label>Frete</label>
+              <div class="frete-badge" id="freteBadge">— insira o CEP</div>
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="form-group form-group--grow">
+              <label>Logradouro *</label>
+              <input type="text" id="fieldStreet" placeholder="Rua das Flores" />
+              <span class="form-error" id="errStreet"></span>
+            </div>
+            <div class="form-group form-group--small">
+              <label>Número *</label>
+              <input type="text" id="fieldNumber" placeholder="123" />
+              <span class="form-error" id="errNumber"></span>
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="form-group">
+              <label>Complemento</label>
+              <input type="text" id="fieldComplement" placeholder="Apto 42 (opcional)" />
+            </div>
+            <div class="form-group">
+              <label>Bairro *</label>
+              <input type="text" id="fieldNeighborhood" placeholder="Centro" />
+              <span class="form-error" id="errNeighborhood"></span>
+            </div>
+          </div>
+          <div class="form-row form-row--2">
+            <div class="form-group">
+              <label>Cidade *</label>
+              <input type="text" id="fieldCity" placeholder="São Paulo" />
+              <span class="form-error" id="errCity"></span>
+            </div>
+            <div class="form-group form-group--small">
+              <label>Estado *</label>
+              <input type="text" id="fieldState" placeholder="SP" maxlength="2" />
+              <span class="form-error" id="errState"></span>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-actions">
+          <button class="btn btn--ghost" id="step2Back">← Voltar</button>
+          <button class="btn btn--primary" id="step2Next">Continuar →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Pagamento -->
+      <div class="checkout-pane checkout-pane--hidden" id="pane3">
+        <div class="checkout-form">
+          <div class="payment-secure-note">
+            <strong>Pagamento protegido</strong>
+            <span>Você não informa dados do cartão neste site. A finalização acontece em uma plataforma segura e conhecida.</span>
+          </div>
+
+          <div class="payment-methods">
+            <label class="payment-option payment-option--active" id="optMercadoPago">
+              <input type="radio" name="payment" value="mercadopago" checked />
+              <div class="payment-option__body">
+                <span class="payment-option__icon">🛡️</span>
+                <div>
+                  <p class="payment-option__title">Mercado Pago</p>
+                  <p class="payment-option__sub">Cartão, PIX e opções da plataforma</p>
+                </div>
+              </div>
+            </label>
+            <label class="payment-option" id="optPagBank">
+              <input type="radio" name="payment" value="pagbank" />
+              <div class="payment-option__body">
+                <span class="payment-option__icon">💳</span>
+                <div>
+                  <p class="payment-option__title">PagBank / PagSeguro</p>
+                  <p class="payment-option__sub">Link protegido para cartão ou PIX</p>
+                </div>
+              </div>
+            </label>
+            <label class="payment-option" id="optPayPal">
+              <input type="radio" name="payment" value="paypal" />
+              <div class="payment-option__body">
+                <span class="payment-option__icon">🌐</span>
+                <div>
+                  <p class="payment-option__title">PayPal</p>
+                  <p class="payment-option__sub">Checkout hospedado pelo PayPal</p>
+                </div>
+              </div>
+            </label>
+            <label class="payment-option" id="optPix">
+              <input type="radio" name="payment" value="pix" />
+              <div class="payment-option__body">
+                <span class="payment-option__icon">💸</span>
+                <div>
+                  <p class="payment-option__title">PIX direto</p>
+                  <p class="payment-option__sub" id="pixSubtitle">R$ 3.000,00 à vista, com confirmação manual</p>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <div class="payment-link-alert" id="paymentLinkAlert">
+            Selecione uma plataforma. Ao confirmar, o cliente será enviado para o link de pagamento configurado.
+          </div>
+
+          <!-- Order total -->
+          <div class="checkout-total" id="checkoutTotal">
+            <div class="checkout-total__row">
+              <span>Produto</span>
+              <span id="totalProduct">R$ 3.000,00</span>
+            </div>
+            <div class="checkout-total__row">
+              <span>Frete</span>
+              <span id="totalShipping">Grátis</span>
+            </div>
+            <div class="checkout-total__row checkout-total__row--discount" id="totalDiscountRow" style="display:none">
+              <span>Desconto</span>
+              <span id="totalDiscount">− R$ 0,00</span>
+            </div>
+            <div class="checkout-total__row checkout-total__row--final">
+              <span>Total</span>
+              <span id="totalFinal">R$ 3.000,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-actions">
+          <button class="btn btn--ghost" id="step3Back">← Voltar</button>
+          <button class="btn btn--primary checkout-btn-pay" id="step3Pay">
+            <span id="payBtnText">Ir para pagamento seguro 🔒</span>
+            <span class="pay-loader" id="payLoader"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 4: Confirmação -->
+      <div class="checkout-pane checkout-pane--hidden" id="pane4">
+        <div class="checkout-confirm">
+          <div class="checkout-confirm__icon">✅</div>
+          <h3 class="checkout-confirm__title">Pedido confirmado!</h3>
+          <p class="checkout-confirm__sub">Você receberá um e-mail de confirmação em instantes.</p>
+          <div class="checkout-confirm__protocol">
+            <span>Protocolo</span>
+            <strong id="protocolNumber">#IST-000000</strong>
+          </div>
+          <div class="checkout-confirm__details" id="confirmDetails"></div>
+          <button class="btn btn--primary" id="confirmClose">Voltar à loja</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.js?v=20260524-secure-payments"></script>
+  <script src="js/chatbot.js?v=20260524-secure-payments"></script>
+  <script src="js/checkout.js?v=20260524-secure-payments"></script>
+</body>
+</html>
